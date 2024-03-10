@@ -1,3 +1,10 @@
+:root{
+    --day: "DAYS";
+    --hour: "HOURS";
+    --minute: "MINUTES";
+    --second: "SECONDS";
+    
+}
 .dancing-script-bold {
     font-family: "Dancing Script";
     color: gold;
@@ -63,16 +70,16 @@ body {
   }
   
   .oriCountdown #day::before {
-    content: "Days";
+    content: var(--day);;
   }
   .oriCountdown #hour::before {
-    content: "Hours";
+    content: var(--hour);
   }
   .oriCountdown #minute::before {
-    content: "Minutes";
+    content: var(--minute);
   }
   .oriCountdown #second::before {
-    content: "Seconds";
+    content: var(--second);
   }
   
 
