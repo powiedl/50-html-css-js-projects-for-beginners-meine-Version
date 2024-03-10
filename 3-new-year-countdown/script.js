@@ -28,8 +28,7 @@ function setCountdown() {
     document.querySelector('#hour').innerText=delta.hours
     document.querySelector('#minute').innerText=delta.minutes
     document.querySelector('#second').innerText=delta.seconds
-
 }
 
-setCountdown()
+setCountdown() // damit der Countdown "sofort" da ist
 setInterval(setCountdown,1000);
