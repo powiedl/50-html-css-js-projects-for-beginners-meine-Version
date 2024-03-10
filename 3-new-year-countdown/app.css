@@ -1,0 +1,27 @@
+.dancing-script-bold {
+    font-family: "Dancing Script";
+    color: gold;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+    text-align: center;
+}
+
+html {
+    height:100%;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 32, 0.55)),url('./fireworks.jpg');
+    /* durch den gradient wird das Bild von oben nach unten immer "dunkler", dafür kommt etwas blau dazu */
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: 0;
+}
+
