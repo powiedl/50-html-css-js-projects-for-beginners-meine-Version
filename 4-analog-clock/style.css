@@ -1,0 +1,133 @@
+:root {
+    --logo-size:35px;
+    --clock-size:350px;
+    --shadow-color:rgba(0,0,0,.7);
+    --default-shadow: 1px 1px 2px var(--shadow-color);
+    --digits-color: lightgoldenrodyellow;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: salmon;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width:var(--logo-size);
+    height:var(--logo-size);
+    position: absolute;
+    left: 50%; /* 50% links - ABER der linke Rand ist nach 50% links */
+    transform: translateX(-50%); /* Mit translate -50% wird der linke Rand um die halbe Breite des Elements nach rechts verschoben */
+        /* mit diesen beiden Dingen ist die Mitte des Bildes in der Mitte */
+    top: 60px;
+    z-index: 2;
+}
+
+.digital {
+    font-size:1.5rem;
+    font-weight: bold;
+    color: var(--digits-color);
+    text-align: center;
+    width: 200px;
+    height: var(--logo-size);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 2;
+    text-shadow: var(--default-shadow);
+}
+
+.clock {
+    position: relative;
+    border-radius: 50%;
+    background-color:lightgray;
+    width: var(--clock-size);
+    height: var(--clock-size);
+    border: 5px solid darkgray;
+    box-shadow: 1px 1px 4px var(--shadow-color);
+}
+
+/* #region Ziffern */
+.numbers div {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--digits-color);
+    text-shadow: var(--default-shadow);
+}
+
+.twelve {
+    left:50%;
+    transform: translateX(-50%);
+    top: 6px;
+}
+
+.three {
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.six {
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 6px;
+}
+
+.nine {
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+/* #endregion */
+
+/* #region Zeiger */
+.arrows {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.arrows::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    box-shadow: var(--default-shadow);
+    z-index: 4;
+}
+
+.arrows div {
+    background-color: white;
+    width: 7px;
+    z-index: 3;
+    position: absolute;
+    height: 120px;
+    transform-origin: bottom center; /* damit wird der Ursprung für die Transformation auf die Mitte am Bottom verschoben */
+    bottom: 50%;
+    border-radius: 50% 50% 0 0;
+    box-shadow: var(--default-shadow);
+}
+
+.arrows .hour {
+    height: 80px;
+    transform: rotate(30deg)
+}
+
+.arrows .second {
+    background-color: goldenrod;
+    transform: rotate(250deg)
+}
+/* #endregion */
