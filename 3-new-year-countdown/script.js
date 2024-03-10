@@ -19,6 +19,11 @@ function setCountdown() {
     spanNewYear.innerText = nextNewYear.getFullYear()
     const delta = dateDifference(new Date,nextNewYear);
     spanCountdown.innerHTML = `${delta.days} Day${delta.days !==1 && 's'}&nbsp;&nbsp;&nbsp;${delta.hours} Hour${delta.hours !==1 ? 's' :''}&nbsp;&nbsp;&nbsp;${delta.minutes} Minute${delta.minutes !==1 ? 's' :''}&nbsp;&nbsp;&nbsp;${delta.seconds} Second${delta.seconds !==1 ? 's' :''}`
+    document.querySelector('#day').innerText=delta.days
+    document.querySelector('#hour').innerText=delta.hours
+    document.querySelector('#minute').innerText=delta.minutes
+    document.querySelector('#second').innerText=delta.seconds
+
 }
 
 setCountdown()
