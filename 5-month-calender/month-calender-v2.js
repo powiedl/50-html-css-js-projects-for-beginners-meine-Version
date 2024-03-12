@@ -51,7 +51,7 @@ function getCurrentMonth() {
     const currentMonth = monthEl.innerText;
     [strMonth,strYear] = currentMonth.split(' ');
     const month=months.map(e => e.toUpperCase()).indexOf(strMonth);
-    return [month,strYear];
+    return [month,parseInt(strYear)];
 }
 
 function prevMonth() {
