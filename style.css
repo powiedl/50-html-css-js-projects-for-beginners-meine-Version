@@ -2,18 +2,19 @@ html {
     font-family: sans-serif;
 }
 
+body {
+    padding: 2rem;
+}
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
     gap: 1rem 1rem;
 }
 
 .project {
     position: relative;
-    width: 600px;
-    height: 400px;
+    /* width: 600px; */
 }
 
 .project.span-r2 {
