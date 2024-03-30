@@ -9,11 +9,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
-    gap: 1rem 1rem;
+    gap: 1.5rem 1.5rem;
 }
 
 .project {
     position: relative;
+    transition: all 0.2s ease;
     /* width: 600px; */
 }
 
@@ -55,8 +56,12 @@ body {
     z-index: 2;
     font-size: 2rem;
     background:rgba(255,255,255,0.1);
-    transition: all 0.3s ease;
     opacity:0;
+}
+
+.project:hover {
+    transform: scale(1.04);
+    /* opacity: 0.5; */
 }
 
 .project .overlay:hover {
