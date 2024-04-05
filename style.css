@@ -5,6 +5,9 @@ html {
 body {
     padding: 2rem;
     font-size: 1.3rem;
+    background: 
+     linear-gradient(45deg, hsla(186, 33%, 94%, .5) 0%, hsla(216, 41%, 79%, .5) 100%),
+     radial-gradient(circle at bottom center, hsla(146, 33%, 94%, .5) 0%,hsla(186, 41%, 79%, .5) 100%);
 }
 
 .projects {
