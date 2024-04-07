@@ -90,7 +90,6 @@ body {
 .project:hover .tooltip {
     opacity:1;
     transition: all 1s ease;
-
   }
 
 .project .overlay:hover {
