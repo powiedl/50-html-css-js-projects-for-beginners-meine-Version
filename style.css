@@ -53,14 +53,20 @@ body {
     z-index: 3;
   }
 
+.project .tooltip.w60 {
+    width: 60%;
+}
 .project img {
     width: 100%;
     object-fit:fill;
 }
+
+.project .overlay .content.pt-75 {
+    padding-top: 75%;
+}
 .project .overlay .content.pt-45 {
     padding-top: 45%;
 }
-
 .project .overlay .content.pt-25 {
     padding-top: 25%;
 }

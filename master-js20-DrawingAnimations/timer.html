@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="timer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="timer">
+      <div class="controls">
+        <input id="duration" value="3" />
+        <div>
+          <button id="start"><i class="fas fa-play"></i></button>
+          <button id="pause"><i class="fas fa-pause"></i></button>
+        </div>
+      </div>
+      <svg class="dial">
+        <circle
+        r="190"
+        cx="200"
+        cy="200"
+        fill="transparent"
+        stroke="green"
+        stroke-width="15"
+        transform="rotate(-90 200 200)"
+      >
+        <!-- 
+                    stroke-dasharray: 
+                        1. Wert - wie lang ist ein Strich, 2. Wert die Lücke bis zum nächsten Strich 
+                        wenn kein zweiter Wert angegeben wird, ist die Lücke genauso lang wie der Strich
+                        und der erste Stich beginnt rechts (auf "3 Uhr")
+                    stroke-dashoffset:
+                        Extra-Abstand vor dem ersten Strich, je größer, umso größer ist auch der Extra-Abstand. Und
+                        bei positiven Zahlen wächst er gegen den Uhrzeigersinn, bei negativen Zahlen wächst er im Uhrzeigersinn
+                    (das Maß, auf dass es sich bezieht ist der Radius) 
+                    transform: rotate, hat als Standardeinheit deg und die nächsten beiden Zahlen bestimmen x und y 
+                        vom Ursprung um den rotiert wird (in unserem Fall der Kreismittelpunkt)
+
+                -->
+      </circle>
+      </svg>
+    </div>
+
+    <script src="timer.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
