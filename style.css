@@ -10,6 +10,12 @@ body {
      radial-gradient(circle at bottom center, hsla(146, 33%, 94%, .5) 0%,hsla(186, 41%, 79%, .5) 100%);
 }
 
+strong {
+    font-size: 1.1em;
+    color: red;
+    letter-spacing: 0.03em;
+    padding:0 0.2em;
+}
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
