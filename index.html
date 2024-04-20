@@ -14,25 +14,36 @@
   </head>
   <body>
     <div id="container">
-      <h1>Meine HTML / CSS / Javascript Sammlung</h1>
-      <p>
-        Diese Webseite entsteht im Zuge des udemy Kurses "50 HTML CSS JS
-        PROJECTS FOR BEGINNERS" bzw. teilweise auch aus Anregungen aus anderen
-        Kursen. Während ich den Kurs mache, wird der Inhalt dieser Webseite
-        ständig erweitert (aber ich mache den Kurs nur von Zeit zu Zeit, darum
-        kann es sein, dass es dauert, bis wieder etwas dazu kommt).
-      </p>
-      <p>
-        Das Grid mit den Projekten wird dynamisch über ein Javascript aufgebaut.
-        Im Moment sind die "Daten" für die Projekte noch hartcodiert im Skript
-        in einem JSON hinterlegt. In weiterer Folge soll das JSON aus einem File
-        ausgelesen werden - und außerdem soll man ein neues Projekt mit Hilfe
-        einer "make" Funktion dem JSON hinzufügen können.
-      </p>
-      <p>Dinge, die ich unterwegs gelernt habe (leider habe ich erst bei Projekt 8 angefangen, dass mitzuschreiben) ...</p>
-      <ul>
-        <li>padding-<strong>top</strong> bezieht sich auch auf <strong>width</strong> des übergeordnenten Elements, nicht auf height. Umgehung: position:absolute und top bzw. bottom verwenden (die beziehen sich erwartungsgemäß auf height)</li>
-      </ul>
+      <article>
+        <h1>Meine HTML / CSS / Javascript Sammlung</h1>
+        <p>
+          Diese Webseite entsteht im Zuge des udemy Kurses "50 HTML CSS JS
+          PROJECTS FOR BEGINNERS" bzw. teilweise auch aus Anregungen aus anderen
+          Kursen. Während ich den Kurs mache, wird der Inhalt dieser Webseite
+          ständig erweitert (aber ich mache den Kurs nur von Zeit zu Zeit, darum
+          kann es sein, dass es dauert, bis wieder etwas dazu kommt).
+        </p>
+        <p>
+          Das Grid mit den Projekten wird dynamisch über ein Javascript
+          aufgebaut. Im Moment sind die "Daten" für die Projekte noch
+          hartcodiert im Skript in einem JSON hinterlegt. In weiterer Folge soll
+          das JSON aus einem File ausgelesen werden - und außerdem soll man ein
+          neues Projekt mit Hilfe einer "make" Funktion dem JSON hinzufügen
+          können.
+        </p>
+        <p>
+          Dinge, die ich unterwegs gelernt habe (leider habe ich erst bei
+          Projekt 8 angefangen, dass mitzuschreiben) ...
+        </p>
+        <ul>
+          <li>
+            padding-<strong>top</strong> bezieht sich auch auf
+            <strong>width</strong> des übergeordnenten Elements, nicht auf
+            height. Umgehung: position:absolute und top bzw. bottom verwenden
+            (die beziehen sich erwartungsgemäß auf height)
+          </li>
+        </ul>
+      </article>
       <div class="projects">
         <!-- hier werden die Projekte dynamisch durch das Skript make-projects-grid.js eingefügt -->
       </div>

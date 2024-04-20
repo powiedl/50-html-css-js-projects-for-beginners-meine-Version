@@ -67,14 +67,18 @@ strong {
     object-fit:fill;
 }
 
-.project .overlay .content.pt-75 {
-    padding-top: 75%;
+.project .overlay .content {
+    position: absolute;
 }
-.project .overlay .content.pt-45 {
-    padding-top: 45%;
+
+.project .overlay .content.t-65 {
+    top: 65%;
 }
-.project .overlay .content.pt-25 {
-    padding-top: 25%;
+.project .overlay .content.t-55 {
+    top: 55%;
+}
+.project .overlay .content.t-25 {
+    top: 25%;
 }
 
 .project .overlay {
@@ -94,7 +98,7 @@ strong {
     opacity:0;
 }
 
-.project:hover {
+.project:hover  {
     transform: scale(1.04);
     /* opacity: 0.5; */
 }
