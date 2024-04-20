@@ -1,0 +1,54 @@
+:root{
+    --radius: 15px;
+    --weiss: whitesmoke;
+    --font-normal: 1.4rem;
+    --font-small: calc(var(--font-normal) * 0.7);
+    --font-large: calc(var(--font-normal) * 4);
+    --grau: darkgray;
+}
+
+body {
+    background-color: slateblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.calendar {
+    border-radius: var(--radius);
+    width:25%;
+    min-width:250px;
+    max-width:400px;
+    height: 300px;
+    min-height: 300px;
+    background-color: var(--weiss);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+    padding-bottom:var(--font-normal);
+}
+
+.month {
+    background-color: red;
+    color: var(--weiss);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    font-size: var(--font-normal);
+    padding: calc(var(--font-normal) / 2) 0;
+}
+
+.weekday,.year {
+    font-size: var(--font-small);
+    color: var(--grau);
+}
+
+.date {
+    font-size: var(--font-large);
+    font-weight: bold;
+}

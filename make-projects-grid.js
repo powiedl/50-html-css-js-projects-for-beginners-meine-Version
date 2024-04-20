@@ -7,7 +7,8 @@ const json=`[
     {"id":"6","span":"r2","tooltip":"Rotating Image Gallery (Abschnitt 6) - eigentlich total simple...","img":"image-06.png","overlay":{"color":"white","t":"t-25","href":"6-rotating-image-gallery/rotating-image-gallery.html"}},
     {"id":"master-20","span":"r4","tooltip":"Timer (Master JS, Abschnitt 20) - Pausieren kann auch beendet werden (solange die Restzeit nicht verändert wurde)","tooltipAdditionalClasses":["w60"],"img":"image-master-js20.png","overlay":{"color":"black","t":"t-65","href":"master-js20-DrawingAnimations/timer.html"}},
     {"id":"7","span":"r2","tooltip":"Background Image Scroll Effect (Abschnitt 7) - Zoomed beim nach unten scrollen hinaus und das Bild wird blasser","tooltipAdditionalClasses":["w60"],"img":"image-07.png","overlay":{"color":"black","t":"t-25","href":"7-Background-Image-Scroll/7-background-image-scroll.html"}},
-    {"id":"8","span":"r2","tooltip":"Real-time Character Counter (Abschnitt 8)","img":"image-08.png","overlay":{"color":"white","t":"t-25","href":"8-Real-Time-character-counter/real-time-character-counter.html"}}
+    {"id":"8","span":"r2","tooltip":"Real-time Character Counter (Abschnitt 8)","img":"image-08.png","overlay":{"color":"white","t":"t-25","href":"8-Real-Time-character-counter/real-time-character-counter.html"}},
+    {"id":"9","span":"r3","tooltip":"Mini Calendar (Abschnitt 9)","img":"image-09.png","overlay":{"color":"black","t":"t-25","href":"9-Mini-Calendar/mini-calendar.html"}}
 ]`;
 const projects=JSON.parse(json);
 
