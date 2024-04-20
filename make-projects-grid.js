@@ -9,8 +9,8 @@ const json=`[
     {"id":"7","span":"r2","tooltip":"Background Image Scroll Effect (Abschnitt 7) - Zoomed beim nach unten scrollen hinaus und das Bild wird blasser","tooltipAdditionalClasses":["w60"],"img":"image-07.png","overlay":{"color":"black","t":"t-25","href":"7-Background-Image-Scroll/7-background-image-scroll.html"}},
     {"id":"8","span":"r2","tooltip":"Real-time Character Counter (Abschnitt 8)","img":"image-08.png","overlay":{"color":"white","t":"t-25","href":"8-Real-Time-character-counter/real-time-character-counter.html"}},
     {"id":"9","span":"r3","tooltip":"Mini Calendar (Abschnitt 9)","img":"image-09.png","overlay":{"color":"black","t":"t-25","href":"9-Mini-Calendar/mini-calendar.html"}},
-    {"id":"10","span":"r3","tooltip":"Password Generator (Abschnitt 10) - meine Version (man kann die Länge und die verwendeten Zeichen festlegen","tooltipAdditionalClasses":["w60"],"img":"image-10.png","overlay":{"color":"white","t":"t-25","href":"10-Password-Generator/password-generator.html"}}
-
+    {"id":"10","span":"r3","tooltip":"Password Generator (Abschnitt 10) - meine Version (man kann die Länge und die verwendeten Zeichen festlegen","tooltipAdditionalClasses":["w60"],"img":"image-10.png","overlay":{"color":"white","t":"t-25","href":"10-Password-Generator/password-generator.html"}},
+    {"id":"11","span":"r2","tooltip":"Button Ripple Effect (Abschnitt 11) - das 'rausfahren' ist noch nicht sehr schön","tooltipAdditionalClasses":["w60"],"img":"image-11.png","overlay":{"color":"black","t":"t-55","href":"11-Button-Ripple-Effect/button-ripple-effect.html"}}
 ]`;
 const projects=JSON.parse(json);
 

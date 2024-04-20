@@ -16,6 +16,16 @@ strong {
     letter-spacing: 0.03em;
     padding:0 0.2em;
 }
+
+span.referenz {
+    display:inline-block;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    background-color: blue;
+    color: antiquewhite;
+    border-radius: 0.5rem;
+    margin-left: 0.3rem;
+}
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
