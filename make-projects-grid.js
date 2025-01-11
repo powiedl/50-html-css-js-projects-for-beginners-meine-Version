@@ -48,13 +48,7 @@ function makeProjectDiv(project) {
 }
 
 for (let project of projects) {
-<<<<<<< HEAD
   const projectDivEl = makeProjectDiv(project);
   //console.log(projectDivEl);
   document.querySelector('.projects').append(projectDivEl);
-=======
-    const projectDivEl = makeProjectDiv(project);
-    //console.log(projectDivEl);
-    document.querySelector('.projects').append(projectDivEl);
->>>>>>> 817756f06e257ada304bdd57b1d611bf71b446a8
 }
