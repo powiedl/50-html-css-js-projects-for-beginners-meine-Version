@@ -1,4 +1,4 @@
-const json=`[
+const json = `[
     {"id":"2","span":"r2","tooltip":"Digitaluhr (Abschnitt 2)","img":"image-02.png","overlay":{"color":"white","t":"t-55","href":"2-digital-clock/index.html"}},
     {"id":"3","span":"r2","tooltip":"Countdown zum neuen Jahr (Abschnitt 3)","img":"image-03.png","overlay":{"color":"white","t":"t-25","href":"3-new-year-countdown/index.html"}},
     {"id":"4","span":"r3","tooltip":"Analoguhr (Abschnitt 4)","img":"image-04.png","overlay":{"color":"black","t":"t-55","href":"4-analog-clock/index.html"}},
@@ -11,43 +11,44 @@ const json=`[
     {"id":"9","span":"r3","tooltip":"Mini Calendar (Abschnitt 9)","img":"image-09.png","overlay":{"color":"black","t":"t-25","href":"9-Mini-Calendar/mini-calendar.html"}},
     {"id":"10","span":"r3","tooltip":"Password Generator (Abschnitt 10) - meine Version (man kann die Länge und die verwendeten Zeichen festlegen","tooltipAdditionalClasses":["w60"],"img":"image-10.png","overlay":{"color":"white","t":"t-25","href":"10-Password-Generator/password-generator.html"}},
     {"id":"11","span":"r2","tooltip":"Button Ripple Effect (Abschnitt 11) - das 'rausfahren' ist noch nicht sehr schön","tooltipAdditionalClasses":["w60"],"img":"image-11.png","overlay":{"color":"black","t":"t-55","href":"11-Button-Ripple-Effect/button-ripple-effect.html"}},
-    {"id":"12","span":"r3","tooltip":"Maze game (Master JS, Abschnitt 12) - bring den Ball zum grünen Rechteck (WASD Steuerung)","tooltipAdditionalClasses":["w60"],"img":"image-master-js22.png","overlay":{"color":"white","t":"t-55","href":"master-js22-mazegame/mazegame.html"}}
+    {"id":"12","span":"r3","tooltip":"Maze game (Master JS, Abschnitt 12) - bring den Ball zum grünen Rechteck (WASD Steuerung)","tooltipAdditionalClasses":["w60"],"img":"image-master-js22.png","overlay":{"color":"white","t":"t-55","href":"master-js22-mazegame/mazegame.html"}},
+    {"id":"13","span":"r3","tooltip":"Random Color Generator","img":"image-12.png","overlay":{"color":"white","t":"t-55","href":"12-random-color-generator/random-color-generator.html"}}
 ]`;
-const projects=JSON.parse(json);
+const projects = JSON.parse(json);
 
 function makeProjectDiv(project) {
-    const projectDivEl=document.createElement('div');
-    projectDivEl.classList.add('project');
-    projectDivEl.classList.add('span-'+project.span);
-    const tooltipEl=document.createElement('span');
-    tooltipEl.classList.add('tooltip');
-    if (project.tooltipAdditionalClasses) {
-        for (let addClass of project.tooltipAdditionalClasses) {
-            tooltipEl.classList.add(addClass);
-        }
+  const projectDivEl = document.createElement('div');
+  projectDivEl.classList.add('project');
+  projectDivEl.classList.add('span-' + project.span);
+  const tooltipEl = document.createElement('span');
+  tooltipEl.classList.add('tooltip');
+  if (project.tooltipAdditionalClasses) {
+    for (let addClass of project.tooltipAdditionalClasses) {
+      tooltipEl.classList.add(addClass);
     }
-    tooltipEl.innerText=project.tooltip;
-    const imgEl=document.createElement('img');
-    imgEl.src=project.img;
-    const overlayDivEl=document.createElement('div');
-    overlayDivEl.classList.add('overlay');
-    overlayDivEl.classList.add(project.overlay.color);
-    const contentDivEl=document.createElement('div');
-    contentDivEl.classList.add('content');
-    contentDivEl.classList.add(project.overlay.t);
-    const linkEl=document.createElement('a');
-    linkEl.href=project.overlay.href;
-    linkEl.innerText='Zum Projekt';
-    contentDivEl.appendChild(linkEl);
-    overlayDivEl.appendChild(contentDivEl);
-    projectDivEl.append(tooltipEl,imgEl,overlayDivEl);
-    // console.log(overlayDivEl);
-    // console.log(projectDivEl);
-    return projectDivEl;
+  }
+  tooltipEl.innerText = project.tooltip;
+  const imgEl = document.createElement('img');
+  imgEl.src = project.img;
+  const overlayDivEl = document.createElement('div');
+  overlayDivEl.classList.add('overlay');
+  overlayDivEl.classList.add(project.overlay.color);
+  const contentDivEl = document.createElement('div');
+  contentDivEl.classList.add('content');
+  contentDivEl.classList.add(project.overlay.t);
+  const linkEl = document.createElement('a');
+  linkEl.href = project.overlay.href;
+  linkEl.innerText = 'Zum Projekt';
+  contentDivEl.appendChild(linkEl);
+  overlayDivEl.appendChild(contentDivEl);
+  projectDivEl.append(tooltipEl, imgEl, overlayDivEl);
+  // console.log(overlayDivEl);
+  // console.log(projectDivEl);
+  return projectDivEl;
 }
 
 for (let project of projects) {
-    const projectDivEl = makeProjectDiv(project);
-    //console.log(projectDivEl);
-    document.querySelector('.projects').append(projectDivEl);
+  const projectDivEl = makeProjectDiv(project);
+  //console.log(projectDivEl);
+  document.querySelector('.projects').append(projectDivEl);
 }

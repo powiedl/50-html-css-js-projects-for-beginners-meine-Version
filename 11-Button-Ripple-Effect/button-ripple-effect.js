@@ -1,3 +1,4 @@
+console.log('hello');
 const btnEl = document.querySelector('.btn');
 btnEl.addEventListener('mouseover', (evt) => {
     const x= evt.pageX-btnEl.offsetLeft;

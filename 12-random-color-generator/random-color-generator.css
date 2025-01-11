@@ -1,0 +1,36 @@
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.box {
+  border-radius: 4px;
+  border: solid 2px black;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:1024px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
